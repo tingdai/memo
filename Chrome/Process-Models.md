@@ -28,7 +28,7 @@ Chromium支持四种进程模式, 影响浏览器分配页面给渲染进程的�
 
 #### 缺点
 
-* *内存开销*. 介个模式比下面process-per-site那个模式产生更多的进程. 增进稳定性和并行机会的同时也增加了内存开销. 
+* *内存开销*. 这个模式比下面process-per-site那个模式产生更多的进程. 增进稳定性和并行机会的同时也增加了内存开销. 
 
 * *更复杂的实现*. 和process-per-tab和single-process不同, 这个模式需要复杂的逻辑来支持tab切换时的进程切换, 以及托管一小部分origins之间允许的Javascript行为, 例如postMessage. (这个问题的更多探讨以及我们为此做的努力请见下面注意事项部分和[Site Isolation](http://www.chromium.org/developers/design-documents/site-isolation)项目页面). 
 
