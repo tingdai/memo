@@ -50,7 +50,7 @@ Chromium也支持另一种进程模型, 它将各个网站分离开来. 但是�
 
 ### process-per-tab
 
-process-per-site-isntance和process-per-site模式在创建进程时都考虑网站原始的内容. Chromium还支持一种更简单的模式, 它向每一组脚本连接的标签提供一个渲染进程. 这种模式需要通过`--process-per-tab`指定. 
+process-per-site-instance和process-per-site模式在创建进程时都考虑网站原始的内容. Chromium还支持一种更简单的模式, 它向每一组脚本连接的标签提供一个渲染进程. 这种模式需要通过`--process-per-tab`指定. 
 
 具体讲, 我们将一组脚本相连的标签提交给一个渲染进程处理, 这一组页面在HTML5说明文档中也被称为"相关联的上下文单元". 这个集合是由一个标签页和其它所有由它通过Javascript打开的标签页组成. 这些标签页必须在相同的渲染进程中处理以保证它们之间相互的Javascript调用(一般位于同一个网站的不同页面间), 被执行, 而不需要专门在渲染进程间通信. 
 
