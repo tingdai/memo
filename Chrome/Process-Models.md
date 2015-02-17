@@ -40,7 +40,7 @@ Chromium也支持另一种进程模型, 它将各个网站分离开来. 但是�
 
 * 将各个网站的内容分隔开来.像在process-per-site-instance模型中一样, 各个不同网站之间不互相影响. 
 
-* 更少的内存使用. 这个模型比rocess-per-site-instance 模型和process-per-tab模型要创建更少的并发进程。这也可以减少Chromium内存的使用。
+* 更少的内存使用. 这个模型比process-per-site-instance 模型和process-per-tab模型要创建更少的并发进程。这也可以减少Chromium内存的使用。
 
 #### 缺点 
 
